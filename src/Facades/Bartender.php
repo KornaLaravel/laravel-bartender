@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Illuminate\Http\RedirectResponse redirect(string $driver)
  * @method static \Illuminate\Http\RedirectResponse callback(string $driver)
  *
- * @see \DirectoryTree\Bartender\BartenderManager
+ * @see BartenderManager
  */
 class Bartender extends Facade
 {

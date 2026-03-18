@@ -1,5 +1,7 @@
 <?php
 
+use DirectoryTree\Bartender\Tests\TestCase;
+
 /*
 |--------------------------------------------------------------------------
 | Test Case
@@ -11,4 +13,4 @@
 |
 */
 
-uses(DirectoryTree\Bartender\Tests\TestCase::class)->in(__DIR__);
+uses(TestCase::class)->in(__DIR__);
