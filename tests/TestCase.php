@@ -5,8 +5,6 @@ namespace DirectoryTree\Bartender\Tests;
 use DirectoryTree\Bartender\BartenderServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
-use function Orchestra\Testbench\laravel_migration_path;
-
 class TestCase extends BaseTestCase
 {
     /**
@@ -22,7 +20,7 @@ class TestCase extends BaseTestCase
      */
     protected function defineDatabaseMigrations(): void
     {
-        $this->loadMigrationsFrom(laravel_migration_path('/'));
+        $this->loadLaravelMigrations();
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 
